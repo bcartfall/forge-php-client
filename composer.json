@@ -20,14 +20,17 @@
     "ext-curl": "*",
     "ext-json": "*",
     "ext-mbstring": "*",
+    "guzzlehttp/guzzle": "^7.2",
     "autodesk/core": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0",
     "satooshi/php-coveralls": "~1.0",
     "squizlabs/php_codesniffer": "~2.6",
-    "friendsofphp/php-cs-fixer": "~1.12",
     "symfony/var-dumper": "^3.2"
+  },
+  "replace": {
+    "guzzlehttp/guzzle": "*"
   },
   "autoload": {
     "psr-4": {
