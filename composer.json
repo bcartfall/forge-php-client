@@ -21,7 +21,7 @@
     "ext-json": "*",
     "ext-mbstring": "*",
     "guzzlehttp/guzzle": "^7.2",
-    "autodesk/core": "^1.0"
+    "autodesk/core": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.0",
@@ -29,9 +29,12 @@
     "squizlabs/php_codesniffer": "~2.6",
     "symfony/var-dumper": "^3.2"
   },
-  "replace": {
-    "guzzlehttp/guzzle": "*"
-  },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/bcartfall/core-php-client.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Autodesk\\Forge\\Client\\": "lib/"
